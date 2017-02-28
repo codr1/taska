@@ -1,0 +1,28 @@
+{
+   
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/app.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development",
+                "MICROSOFT_APP_ID": "d2f7972f-3dc2-4885-93e2-9b35c1a606b9",
+                "MICROSOFT_APP_PASSWORD": "Y3mcu8dPHgSArjk3Liddkmg"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null
+        }   
+    ]
+}
