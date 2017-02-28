@@ -18,6 +18,7 @@ var connector = new builder.ChatConnector({
 });
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
+//Console.log("bitch");
 
 //=========================================================
 // Bots Dialogs
@@ -25,4 +26,5 @@ server.post('/api/messages', connector.listen());
 
 bot.dialog('/', function (session) {
     session.send("Hello World");
+    console.log("what\n");
 });
