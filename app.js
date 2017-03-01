@@ -26,7 +26,7 @@ var dialog = new builder.IntentDialog({ recognizers: [recognizer] });
 
 //=========================================================
 // Bots Dialogs
-//=======================================fe==================
+//=======================================e==================
 /*
 bot.dialog('/', function (session) {
     session.send("Hello World");
@@ -39,8 +39,12 @@ console.log( "got it" );
 dialog.matches('whoIs', [
     function( session, args, next ) {
         var name = builder.EntityRecognizer.findEntity( args.entities, 'name::firstName' );
-        console.log("I am here "  + name.entity );
-        session.send("How am I supposed to know who " + name.entity + " is?" );
+        //console.log("I am here "  + name.entity );
+        if( name ) {
+            session.send("How am I supposed to know who " + name.entity + " is?" );
+        } else {
+            session.send("Who is who?");
+        }
     } 
 ]);
     
